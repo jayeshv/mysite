@@ -1,5 +1,13 @@
 .page-header .baner {
     height: 150px; 
     background-image: url('/static/img/cover.png');
-    border-radius:10px;  
+    /* border-radius:5px;   */
+}
+
+.footer {
+    padding-top: 30px;
+}
+
+.navbar {
+    margin-bottom: 10px;
 }
