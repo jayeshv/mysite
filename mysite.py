@@ -12,4 +12,4 @@ def hello():
 #     return render_template('page_not_found.html'), 404
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
