@@ -1,0 +1,5 @@
+.page-header .baner {
+    height: 150px; 
+    background-image: url('/static/img/cover.jpg');
+    border-radius:10px;  
+}
