@@ -4,8 +4,12 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
+def index_page():
     return render_template('index.html')
+
+# @app.route('/test')
+# def test_page():
+#     return render_template('test.html')
 
 # @app.errorhandler(404)
 # def page_not_found(error):
