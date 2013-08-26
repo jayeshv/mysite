@@ -27,18 +27,18 @@
   <body {% block body_style %} style="background: #F6F6F6;" {% endblock %}>
 
     <div class="container container-fluid">
-      <div>
+      <div class="row">
         {% block header %}
           {% include 'header.html' %}
         {% endblock %}
       </div>
 
-      <div>
+      <div class="row">
         {% block content %}
         {% endblock %}
       </div>
 
-      <div>
+      <div class="row">
         {% block footer %}
           {%include 'footer.html' %}
         {% endblock %}
