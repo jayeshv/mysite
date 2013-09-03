@@ -10,15 +10,28 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 14px;l
 
 {% endblock %}
 
+{% block extra_js %}
+
+<!-- Place this tag after the last widget tag. -->
+  <script type="text/javascript">
+    (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+
+{% endblock %}
+
 {% block content %}
 
 <section id="aboutme">
   <div class="page-header">
     <h4>About me</h4>
-  </div>  
+  </div>
   <div class="row">
     <div class="span8">
-      <p>Yet another computer programmer from Bangalore, India. Works primarily on <a href="http://python.org">Python</a> and web applications. Other than computers and programming, I love night sky and stars.</p> 
+      <p>Yet another computer programmer from Bangalore, India. Works primarily on <a href="http://python.org">Python</a> and web applications. Other than computers and programming, I love night sky and stars.</p>
     </div>
     <img class="span4 img-responsive img-circle pull-right" src="/static/img/jayesh.jpg" />
   </div>
@@ -28,7 +41,7 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 14px;l
   <div class="page-header">
     <h4>Connect</h4>
   </div>
-  
+
   <div class="btn-group">
     <a href="mailto:jayesh.mail@gmail.com" target="_top" class="btn btn-primary btn-large"><span><i class="icon-envelope icon-white"></i> Mail me</span></a>
   </div>
@@ -36,7 +49,12 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 14px;l
   <div class="item">
     <!-- Facebook Badge START --><span style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; line-height: 16px; font-variant: normal; font-style: normal; font-weight: normal; color: #555555; text-decoration: none;"><a href="https://www.facebook.com/jayesh.mail" target="_TOP" title="Jayesh Puthukkara"><img src="https://badge.facebook.com/badge/671993889.7750.1333933689.png" style="border: 0px;" /></a><!-- Facebook Badge END -->
   </div>
-  
+
+  <!-- Place this tag where you want the widget to render. -->
+  <div class="item">
+    <div class="g-person" data-width="360" data-href="//plus.google.com/114002818253272778828" data-layout="landscape" data-showtagline="false" data-showcoverphoto="false" data-rel="author"></div>
+  </div>  
+
   <div class="item">
     <a href="http://www.twitter.com/jayeshv" rel="nofollow"><img class="img-responsive" alt="Follow jayeshv on Twitter" src="http://twitter-badges.s3.amazonaws.com/follow_me-a.png"></a>
   </div>
@@ -77,4 +95,3 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 14px;l
   </p>
 </section>
 {% endblock %}
-
