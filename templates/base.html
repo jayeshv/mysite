@@ -50,6 +50,16 @@
     {% block js_imports %}
     <script src="/static/js/jquery-1.10.2.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+    <script>
+    (function(f,b){
+        var c;
+        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+        f._hjSettings={hjid:46203, hjsv:4};
+        c=b.createElement("script");c.async=1;
+        c.src="//static.hotjar.com/c/hotjar-"+f._hjSettings.hjid+".js?sv="+f._hjSettings.hjsv;
+        b.getElementsByTagName("head")[0].appendChild(c); 
+      })(window,document);
+    </script>
     {% block extra_js %}
     {% endblock %}
     {% endblock %}
